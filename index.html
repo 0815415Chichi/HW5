@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Open Chan</title>
+
+
+       <style>
+         body {
+            height:3000px;
+         }
+         .bar {
+            z-index: 10;
+         }
+
+          #background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background: url('img/background.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -webkit-filter: blur(5px);
+         }
+      </style>
+     
+      <script src="js/jquery.min.js"></script>
+      <script src="js/skrollr.min.js"></script>
+</head>
+
+<body>
+ <div id="background">
+      </div> 
+ <div class="bar" style="top:100px;width:100%;text-align:center">
+         <img src="img/openbar.png" style="width: 600px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 1;-webkit-filter: blur(0px);" data-100="opacity: 0.5;-webkit-filter: blur(5px);" class="bar">
+      </div>
+     
+      <div class="skrollable" style="top: 400px; opacity: 1; -webkit-filter: blur(0px);text-align:center" data-0="opacity: 1;-webkit-filter: blur(0px);" data-200="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-400="opacity: 0;right: 500px;-webkit-filter: blur(5px);">
+         <img src="img/open.png" style="width:500px;">
+      </div>
+      <div class="skrollable" style="top: 600px; opacity: 1; -webkit-filter: blur(0px);text-align:center" data-400="opacity: 1;-webkit-filter: blur(0px);" data-600="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-800="opacity: 0;left: 500px;-webkit-filter: blur(5px);">
+         <img src="img/openwalk.png" style="width:500px;">
+      </div>
+      <div class="skrollable" style="top: 800px; opacity: 1; -webkit-filter: blur(0px);text-align:center" data-600="opacity: 1;-webkit-filter: blur(0px);" data-800="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1000="opacity: 0;right: 500px;-webkit-filter: blur(5px);">
+         <img src="img/chikuwa.png" style="width:500px;">
+      </div>
+      <div class="skrollable" style="top: 1000px; opacity: 1; -webkit-filter: blur(0px);text-align:center" data-1000="opacity: 1;-webkit-filter: blur(0px);" data-1200="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-1400="opacity: 0;left: 500px;-webkit-filter: blur(5px);">
+         <img src="img/pineapple.png" style="width:500px;">
+      </div>
+      <div class="skrollable" style="top: 1200px; opacity: 1; -webkit-filter: blur(0px);text-align:center" data-1200="opacity: 1;-webkit-filter: blur(0px);" data-1400="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1600="opacity: 0;right: 500px;-webkit-filter: blur(5px);">
+         <img src="img/riceball.png" style="width:500px;">
+      </div>
+      <div class="skrollable" style="top: 1400px; opacity: 1;-webkit-filter: blur(0px);text-align:center" data-1400="opacity: 1;-webkit-filter: blur(0px);" data-1600="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-1800="opacity: 0;left: 500px;-webkit-filter: blur(5px);">
+         <img src="img/711big.PNG" style="width:500px;">
+      </div>
+      <div class="bar" style="top:2000px;width:100%;text-align:center">
+         <a href="https://www.openopen.com.tw/?fbclid=IwAR0DCSV0X23PUZ_p4uBsD3kXIalYVU_LCX8vw7aZnfJGq_vLBAGz0-ip_TM"></a>
+         <img src="img/openall.png" style="width: 1000px; opacity: 0; -webkit-filter: blur(5px);" data-2000="opacity: 0;-webkit-filter: blur(5px);" data-2500="opacity: 1;-webkit-filter: blur(0px);" class="bottom">
+      </div>
+      <script type="text/javascript">
+      var skrollr_obj = skrollr.init();
+      </script>
+   
+</body>
+</html>
+
